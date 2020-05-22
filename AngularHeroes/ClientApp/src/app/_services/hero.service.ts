@@ -4,9 +4,9 @@ import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { Observable, of } from 'rxjs';
 import { catchError, map, tap } from 'rxjs/operators';
 
-import { Hero } from './hero';
+import { Hero } from '../_models/hero';
 import { MessageService } from './message.service';
-import { environment } from '../environments/environment';
+import { environment } from '../../environments/environment';
 
 
 @Injectable({ providedIn: 'root' })
