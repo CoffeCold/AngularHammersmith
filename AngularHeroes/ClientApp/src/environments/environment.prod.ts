@@ -1,7 +1,13 @@
+
 export const environment = {
-  production: true,
-  apiUrl: "https://businesslayerhammersmith.azurewebsites.net/heroes"
-};
+  production: false,
+  baseUrl: 'https://businesslayerhammersmith.azurewebsites.net',
+  readscopeUri: ['https://businesslayerhammersmith.azurewebsites.net/HeroesRead'],
+  writescopeUri: ['https://businesslayerhammersmith.azurewebsites.net/HeroesWrite'],
+  tenantId: 'xxx',
+  uiClienId: 'xxx',
+  redirectUrl: 'https://angularhammersmith.azurewebsites.net'
+};  
 
 
 /*

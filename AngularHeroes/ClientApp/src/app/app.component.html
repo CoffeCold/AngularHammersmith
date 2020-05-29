@@ -3,9 +3,9 @@
 
   <div class="toolbar-spacer"></div>
 
-  <a mat-button *ngIf="!loggedIn" [routerLink]="['dashboard']">Dashboard</a>
-  <a mat-button *ngIf="!loggedIn" [routerLink]="['heroes']">Heroes</a>
-  <a mat-button *ngIf="!loggedIn" [routerLink]="['profile']">Profile</a>
+  <a mat-button *ngIf="loggedIn" [routerLink]="['dashboard']">Dashboard</a>
+  <a mat-button *ngIf="loggedIn" [routerLink]="['heroes']">Heroes</a>
+  <a mat-button *ngIf="loggedIn" [routerLink]="['profile']">Profile</a>
 
   <button mat-raised-button *ngIf="!loggedIn" (click)="login()">Login</button>
   <button mat-raised-button *ngIf="loggedIn" (click)="logout()">Logout</button>

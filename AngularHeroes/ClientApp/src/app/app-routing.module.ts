@@ -9,10 +9,10 @@ import { HomeComponent } from './home/home.component';
 import { ProfileComponent } from './profile/profile.component';
 
 const routes: Routes = [
-  { path: '', redirectTo: '/dashboard', pathMatch: 'full' },
-  { path: 'dashboard', component: DashboardComponent },
-  { path: 'detail/:id', component: HeroDetailComponent },
-  { path: 'heroes', component: HeroesComponent },
+  { path: '', redirectTo: '/home', pathMatch: 'full' },
+  { path: 'dashboard', component: DashboardComponent, canActivate: [MsalGuard] },
+  { path: 'detail/:id', component: HeroDetailComponent, canActivate: [MsalGuard] },
+  { path: 'heroes', component: HeroesComponent, canActivate: [MsalGuard]},
   { path: 'home', component: HomeComponent },
   { path: 'profile', component: ProfileComponent, canActivate: [MsalGuard] }
 

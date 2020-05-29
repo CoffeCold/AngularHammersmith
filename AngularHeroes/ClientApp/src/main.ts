@@ -10,7 +10,7 @@ if (environment.production) {
 
 platformBrowserDynamic().bootstrapModule(AppModule);
 
-
+import 'zone.js/dist/zone';
 /*
 Copyright Google LLC. All Rights Reserved.
 Use of this source code is governed by an MIT-style license that
